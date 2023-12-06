@@ -6,5 +6,5 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   basePath: isProd ? '/portfolio-trichains' : '',
-  assetPrefix: isProd ? '/portfolio-trichains' : ''
+  assetPrefix: isProd ? '/portfolio-trichains/' : ''
 };
