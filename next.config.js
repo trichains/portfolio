@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = nextConfig
+  basePath: isProd ? '/portfolio-trichains' : '',
+  assetPrefix: isProd ? '/portfolio-trichains' : ''
+};
