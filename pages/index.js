@@ -54,14 +54,19 @@ const Home = () => {
             animate="show"
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16">
-            Apaixonado por programação e sempre
+            Apaixonado por programação, sempre
             <br /> transformando ideias em{' '}
             <span className="text-accent">Realidade Digital.</span>
           </motion.p>
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeIn('down', 0.4)}
             initial="hidden"

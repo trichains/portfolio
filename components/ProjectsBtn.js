@@ -12,16 +12,14 @@ const ProjectsBtn = () => {
     <div className="mx-auto xl:mx-0">
       <Link
         href={'/work'}
-        className="relative w-[135px] h-[135px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group sm:w-[185px] sm:h-[185px]">
-        <div className="w-full h-full max-w-[101px] max-h-[108px] sm:max-w-[141px] sm:max-h-[148px]">
-          <Image
-            src={'/rounded-text.svg'}
-            width={141}
-            height={148}
-            alt=""
-            className="animate-spin-slow w-full h-full"
-          />
-        </div>
+        className="relative w-[141px] h-[148px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group z-40 xl:w-[155px] xl:h-[155px]">
+        <Image
+          src={'/rounded-text.svg'}
+          width={141}
+          height={148}
+          alt=""
+          className="animate-spin-slow w-[121px] h-[128px] max-w-full max-h-full xl:max-w-[185px] xl:max-h-[185px]"
+        />
         <HiArrowRight className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300" />
       </Link>
     </div>
