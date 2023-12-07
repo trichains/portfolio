@@ -8,8 +8,7 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
-  FaLanguage,
-  FaCertificate
+  FaLanguage
 } from 'react-icons/fa';
 
 import {
@@ -60,15 +59,7 @@ export const aboutData = [
             href="https://www.origamid.com/certificate/9acf7493"
             target="_blank"
             rel="noreferrer">
-            Certificado
-          </a>
-        ),
-        certificate: (
-          <a
-            href="https://www.origamid.com/certificate/9acf7493"
-            target="_blank"
-            rel="noreferrer">
-            {FaCertificate()}
+            <span className="text-accent">Ver Certificado</span>
           </a>
         )
       },
@@ -79,15 +70,7 @@ export const aboutData = [
             href="https://www.origamid.com/certificate/df7f556d"
             target="_blank"
             rel="noreferrer">
-            Certificado
-          </a>
-        ),
-        certificate: (
-          <a
-            href="https://www.origamid.com/certificate/df7f556d"
-            target="_blank"
-            rel="noreferrer">
-            {FaCertificate()}
+            <span className="text-accent">Ver Certificado</span>
           </a>
         )
       },
@@ -98,15 +81,7 @@ export const aboutData = [
             href="https://www.origamid.com/certificate/4c6b8a99"
             target="_blank"
             rel="noreferrer">
-            Certificado
-          </a>
-        ),
-        certificate: (
-          <a
-            href="https://www.origamid.com/certificate/4c6b8a99"
-            target="_blank"
-            rel="noreferrer">
-            {FaCertificate()}
+            <span className="text-accent">Ver Certificado</span>
           </a>
         )
       },
@@ -117,15 +92,7 @@ export const aboutData = [
             href="https://www.origamid.com/certificate/b15b0ebe"
             target="_blank"
             rel="noreferrer">
-            Certificado
-          </a>
-        ),
-        certificate: (
-          <a
-            href="https://www.origamid.com/certificate/b15b0ebe"
-            target="_blank"
-            rel="noreferrer">
-            {FaCertificate()}
+            <span className="text-accent">Ver Certificado</span>
           </a>
         )
       },
@@ -136,15 +103,7 @@ export const aboutData = [
             href="https://www.origamid.com/certificate/8fa90288"
             target="_blank"
             rel="noreferrer">
-            Certificado
-          </a>
-        ),
-        certificate: (
-          <a
-            href="https://www.origamid.com/certificate/8fa90288"
-            target="_blank"
-            rel="noreferrer">
-            {FaCertificate()}
+            <span className="text-accent">Ver Certificado</span>
           </a>
         )
       },
@@ -155,15 +114,7 @@ export const aboutData = [
             href="https://www.origamid.com/certificate/4a38808e"
             target="_blank"
             rel="noreferrer">
-            Certificado
-          </a>
-        ),
-        certificate: (
-          <a
-            href="https://www.origamid.com/certificate/4a38808e"
-            target="_blank"
-            rel="noreferrer">
-            {FaCertificate()}
+            <span className="text-accent">Ver Certificado</span>
           </a>
         )
       },
@@ -238,8 +189,8 @@ const About = () => {
             animate="show"
             exit={'hidden'}
             className="h2">
-            Histórias <span className="text-accent">cativantes</span> nascem da
-            dedicação ao design.
+            Projetos <span className="text-accent">vencedores</span> nascem da
+            dedicação a tecnologia.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -248,7 +199,7 @@ const About = () => {
             exit={'hidden'}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
             Há 1 ano atrás, comecei a trabalhar de freelancer como
-            desenvolvedor. Desde então, fiz trabalho remoto para agências e
+            desenvolvedor. Desde então, fiz trabalhos remoto para agências e
             colaborei em produtos digitais para uso empresarial e de consumo.
           </motion.p>
           {/* counters */}
@@ -330,7 +281,6 @@ const About = () => {
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
-                  <div>{item.certificate}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {

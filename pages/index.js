@@ -9,6 +9,9 @@ import Avatar from '../components/Avatar';
 // framer motion
 import { motion } from 'framer-motion';
 
+// react type animation
+import { TypeAnimation } from 'react-type-animation';
+
 // variants
 import { fadeIn } from '../variants';
 
@@ -23,22 +26,37 @@ const Home = () => {
             variants={fadeIn('down', 0.2)}
             initial="hidden"
             animate="show"
-            exit={'hidden'}
+            exit="hidden"
             className="h1">
-            Transformando Ideias <br /> em{' '}
-            <span className="text-accent">Realidade Digital</span>
+            Olá, eu sou <br />
+            <span className="text-accent">
+              <TypeAnimation
+                sequence={[
+                  'Cristhian',
+                  3000,
+                  'Web Developer',
+                  2000,
+                  'Mobile Developer',
+                  2000,
+                  'UI/UX Designer',
+                  2000
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
             variants={fadeIn('down', 0.3)}
             initial="hidden"
             animate="show"
-            exit={'hidden'}
+            exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16">
-            Olá! sou <span className="text-accent">Cristhian, </span>um
-            apaixonado por programação. Meu objetivo é transformar sua ideia em
-            <span className="font-semibold"> realidade digital</span>,
-            utilizando conceitos atualizados de design e tecnologias modernas.
+            Apaixonado por programação e sempre
+            <br /> transformando ideias em{' '}
+            <span className="text-accent">Realidade Digital.</span>
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
@@ -48,7 +66,7 @@ const Home = () => {
             variants={fadeIn('down', 0.4)}
             initial="hidden"
             animate="show"
-            exit={'hidden'}
+            exit="hidden"
             className="hidden xl:flex">
             <ProjectsBtn />
           </motion.div>
@@ -65,7 +83,7 @@ const Home = () => {
           variants={fadeIn('up', 0.5)}
           initial="hidden"
           animate="show"
-          exit={'hidden'}
+          exit="hidden"
           transition={{ duration: 1, ease: 'easeInOut' }}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-20 lg:right-[8%]">
           <Avatar />
