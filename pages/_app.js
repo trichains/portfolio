@@ -22,7 +22,10 @@ function MyApp({ Component, pageProps }) {
           property="og:description"
           content="Explore meu portfólio e descubra projetos que refletem minha dedicação e abordagem criativa."
         />
-        <meta property="og:image" content="https://i.ibb.co/MMv3FFh/3c.png" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/9Zy64PX/3chains.png"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
