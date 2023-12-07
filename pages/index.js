@@ -34,16 +34,11 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16">
             Olá! sou <span className="text-accent">Cristhian, </span>um
-            apaixonado por programação.
-            <br />
-            Meu objetivo é transformar sua ideia em
-            <br />
-            <span className="font-semibold">realidade digital</span>, utilizando
-            conceitos atualizados
-            <br />
-            de design e tecnologias modernas.
+            apaixonado por programação. Meu objetivo é transformar sua ideia em
+            <span className="font-semibold"> realidade digital</span>,
+            utilizando conceitos atualizados de design e tecnologias modernas.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
