@@ -2,53 +2,78 @@
 const workSlider = {
   slides: [
     {
-      images: [
+      projects: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
-          link: 'https://chatchains.vercel.app/'
+          title: 'ChatChains',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Chatbot integrado com a API do GPT. Projeto organizado com
+              interface limpa e moderna.
+            </span>
+          ),
+          link: 'https://chatchains.vercel.app/',
+          image: '/thumb1.jpg'
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
-          link: 'https://mottocraft.vercel.app/'
+          title: 'mottocraft',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Um site para venda e compra de motos premium.
+            </span>
+          ),
+          link: 'https://mottocraft.vercel.app/',
+          image: '/thumb2.jpg'
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
-          link: 'https://trichains.github.io/aves-fantasticas/'
+          title: 'Aves Fantásticas',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Um guia visual encantador das aves mais fascinantes do mundo.
+            </span>
+          ),
+          link: 'https://trichains.github.io/aves-fantasticas/',
+          image: '/thumb3.jpg'
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
-          link: 'https://trichains.github.io/projeto-wildbeast/'
-        }
-      ]
-    },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-          link: 'https://trichains.github.io/projeto-flexblog/'
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-          link: 'https://trichains.github.io/flip-card/'
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-          link: 'https://trichains.github.io/projeto-cordel/'
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-          link: 'https://trichains.github.io/projeto-login-basico/'
+          title: 'WildBeast',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Explore o mundo da natureza com este site informativo.
+            </span>
+          ),
+          link: 'https://trichains.github.io/projeto-wildbeast/',
+          image: '/thumb4.jpg'
         }
       ]
     }
+    // {
+    //   projects: [
+    //     {
+    //       title: 'FlexBlog',
+    //       description: 'Um blog flexível com design moderno e responsivo.',
+    //       link: 'https://trichains.github.io/projeto-flexblog/',
+    //       image: '/thumb4.jpg'
+    //     },
+    //     {
+    //       title: 'Flip Card',
+    //       description: 'Um efeito de carta giratória interativo usando CSS e JavaScript.',
+    //       link: 'https://trichains.github.io/flip-card/',
+    //       image: '/thumb1.jpg'
+    //     },
+    //     {
+    //       title: 'Projeto Cordel',
+    //       description: 'Um projeto criativo inspirado no tradicional cordel brasileiro.',
+    //       link: 'https://trichains.github.io/projeto-cordel/',
+    //       image: '/thumb2.jpg'
+    //     },
+    //     {
+    //       title: 'Projeto Login Básico',
+    //       description: 'Um formulário de login simples e elegante.',
+    //       link: 'https://trichains.github.io/projeto-login-basico/',
+    //       image: '/thumb3.jpg'
+    //     }
+    //   ]
+    // }
   ]
 };
 
@@ -80,30 +105,35 @@ const WorkSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-              {slide.images.map((image, index) => {
+              {slide.projects.map((project, index) => {
                 return (
                   <a
                     key={index}
-                    href={image.link}
+                    href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group">
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       {/* image */}
-                      <Image src={image.path} width={500} height={300} alt="" />
+                      <Image
+                        src={project.image}
+                        width={500}
+                        height={300}
+                        alt={project.title}
+                      />
                       {/* overlay gradient */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       {/* title */}
                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
-                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          {/* title part 1 */}
-                          <div className="delay-100">VER</div>
-                          {/* title part 2 */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJETO
+                        <div className="flex flex-col items-center text-[13px] tracking-[0.2em]">
+                          {/* title */}
+                          <div className="mb-1">{project.title}</div>
+                          {/* description */}
+                          <div className="text-center text-gray-300">
+                            {project.description}
                           </div>
                           {/* icon */}
-                          <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                          <div className="mt-2 text-xl text-white">
                             <BsArrowRight />
                           </div>
                         </div>

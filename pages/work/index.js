@@ -21,7 +21,7 @@ const Work = () => {
               animate="show"
               exit={'hidden'}
               className="h2 xl:mt-12">
-              Meus projetos <span className="text-accent">.</span>
+              Meus <span className="text-accent">projetos</span>.
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -29,8 +29,9 @@ const Work = () => {
               animate="show"
               exit={'hidden'}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Conhecimentos tecnológicos e experiência profissional para o seu
-              projeto e desenvolvimento web.
+              Desenvolvo projetos web com plena atenção em cada detalhe. Cada linha de
+              código é uma história, cada design é uma expressão de
+              criatividade.
             </motion.p>
           </div>
           {/* slider */}
