@@ -24,27 +24,30 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    description:
+      'Destaque-se através um visual único e memorável para a sua marca'
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    description: 'Transforme suas ideias em experiências visuais impactantes.'
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    title: 'Desenvolvimento',
+    description:
+      'Websites robustos e eficientes com foco na performance, segurança e experiência do usuário.'
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    description: 'Comunique sua mensagem de maneira eficaz e persuasiva.'
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    description:
+      'Impulsione sua visibilidade online com estratégias avançadas de SEO.'
   }
 ];
 

@@ -3,23 +3,21 @@ const testimonialSlider = [
   {
     image: '/t-avt-1.png',
     name: 'Márcio Melo',
-    position: 'Cliente',
-    message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!'
+    position: 'Empresário Visionário',
+    message: 'Experiência única! Transformou nossas ideias em realidade.'
   },
   {
     image: '/t-avt-2.png',
     name: 'Alice Costa',
-    position: 'Cliente',
-    message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!'
+    position: 'Designer de Moda',
+    message: 'Cristhian, você é verdadeiramente um artista digital! 🎉'
   },
   {
     image: '/t-avt-3.png',
     name: 'Henrique Gomes',
-    position: 'Cliente',
+    position: 'Empreendedor Digital',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!'
+      'Divisor de águas! Impulsionou nossa presença online.'
   }
 ];
 

@@ -21,7 +21,8 @@ const Services = () => {
               animate="show"
               exit="hidden"
               className="h2 xl:mt-8">
-              Meus serviços<span className="text-accent">.</span>
+              Desenvolvendo Soluções{' '}
+              <span className="text-accent">Inovadoras</span>.
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -29,8 +30,9 @@ const Services = () => {
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Conhecimentos tecnológicos e experiência profissional para o seu
-              projeto e desenvolvimento web.
+              Combinando paixão por tecnologia e experiência profissional, eu
+              ofereço serviços excepcionais para levar o seu projeto para o
+              próximo nível.
             </motion.p>
           </div>
           {/* slider */}
