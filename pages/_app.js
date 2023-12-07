@@ -17,6 +17,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.svg" />
+        <meta property="og:title" content="trichains - Portfólio" />
+        <meta
+          property="og:description"
+          content="Sou Cristhian, um desenvolvedor web e mobile, além de designer UI/UX. Navegue por meu portfólio e descubra projetos refinados que refletem minha dedicação em transformar ideias em realidade digital. Com habilidades sólidas e uma abordagem criativa, estou pronto para enfrentar desafios e contribuir para soluções tecnológicas de ponta. Vamos colaborar e criar algo extraordinário juntos."
+        />
+        <meta property="og:image" content="https://i.ibb.co/MMv3FFh/3c.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trichains.vercel.app" />
       </Head>
       <Layout>
         <AnimatePresence mode="wait">
