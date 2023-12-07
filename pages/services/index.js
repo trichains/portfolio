@@ -19,7 +19,7 @@ const Services = () => {
               variants={fadeIn('up', 0.2)}
               initial="hidden"
               animate="show"
-              exit="hidden"
+              exit={'hidden'}
               className="h2 xl:mt-8">
               Meus serviços<span className="text-accent">.</span>
             </motion.h2>
@@ -27,7 +27,7 @@ const Services = () => {
               variants={fadeIn('up', 0.4)}
               initial="hidden"
               animate="show"
-              exit="hidden"
+              exit={'hidden'}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
               Conhecimentos tecnológicos e experiência profissional para o seu
               projeto e desenvolvimento web.
@@ -38,7 +38,7 @@ const Services = () => {
             variants={fadeIn('down', 0.6)}
             initial="hidden"
             animate="show"
-            exit="hidden"
+            exit={'hidden'}
             className="w-full xl:max-w-[65%]">
             <ServiceSlider />
           </motion.div>
