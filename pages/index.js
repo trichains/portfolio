@@ -1,5 +1,3 @@
-import BgExplosion from '../components/BgExplosion';
-
 // components
 import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
@@ -79,9 +77,7 @@ const Home = () => {
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* bg img */}
-        <div className="bg-cover bg-no-repeat">
-          <BgExplosion />
-        </div>
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 animate-pulse duration-1000" />
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}

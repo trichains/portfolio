@@ -6,7 +6,7 @@ const TopLeftImg = () => {
       className="absolute top-0 left-0 mix-blend-color-dodge z-10 w-[200px] xl:w-[400px]
       opacity-40">
       <Image
-        src="/top-left-img.webp"
+        src="/top-left-img.png"
         alt="top-left-image"
         width={400}
         height={400}

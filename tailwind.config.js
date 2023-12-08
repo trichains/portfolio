@@ -28,7 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.webp")',
-        circles: 'url("/bg-circles.webp")',
+        circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")'
       },
