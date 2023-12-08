@@ -79,14 +79,9 @@ const Home = () => {
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* bg img */}
-        <motion.div
-          variants={fadeIn('right', 0.6)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="bg-cover bg-no-repeat">
+        <div className="bg-cover bg-no-repeat">
           <BgExplosion />
-        </motion.div>
+        </div>
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
