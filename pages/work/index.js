@@ -29,8 +29,8 @@ const Work = () => {
               animate="show"
               exit={'hidden'}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Desenvolvo projetos web com plena atenção em cada detalhe. Cada linha de
-              código é uma história, cada design é uma expressão de
+              Desenvolvo projetos web com plena atenção em cada detalhe. Cada
+              linha de código é uma história, cada design é uma expressão de
               criatividade.
             </motion.p>
           </div>
