@@ -80,7 +80,7 @@ const Home = () => {
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* bg img */}
-        <div className="bg-explosion xl:opacity-100 opacity-20 bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+        <div className="bg-explosion xl:opacity-100 opacity-20 bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-1"></div>
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
