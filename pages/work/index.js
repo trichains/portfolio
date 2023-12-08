@@ -14,7 +14,7 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+          <div className="text-center flex xl:w-[50vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
               variants={fadeIn('up', 0.2)}
               initial="hidden"
@@ -28,7 +28,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit={'hidden'}
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0">
+              className="mb-4 max-w-[500px] mx-auto lg:mx-0">
               Desenvolvo projetos web com plena atenção em cada detalhe. Cada
               linha de código é uma história, cada design é uma expressão de
               criatividade.
@@ -40,7 +40,7 @@ const Work = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%]">
+            className="w-full xl:max-w-[80%]">
             <WorkSlider />
           </motion.div>
         </div>
