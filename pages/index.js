@@ -1,5 +1,4 @@
-// next image
-import Image from 'next/image';
+import BgExplosion from '../components/BgExplosion';
 
 // components
 import ParticlesContainer from '../components/ParticlesContainer';
@@ -80,7 +79,14 @@ const Home = () => {
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* bg img */}
-        <div className="bg-explosion xl:opacity-100 opacity-20 bg-cover bg-right bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-1"></div>
+        <motion.div
+          variants={fadeIn('right', 0.6)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="bg-cover bg-no-repeat">
+          <BgExplosion />
+        </motion.div>
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
