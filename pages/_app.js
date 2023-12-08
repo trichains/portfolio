@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/cc8VLwK/trichains.png"
+          content="https://i.ibb.co/Y80DfL1/trichains.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
