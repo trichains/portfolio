@@ -199,7 +199,7 @@ const About = () => {
             exit={'hidden'}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
             Há 1 ano atrás, comecei a trabalhar de freelancer como
-            desenvolvedor. Desde então, fiz trabalhos remoto para agências e
+            desenvolvedor. Desde então, fiz trabalhos remotos para agências e
             colaborei em produtos digitais para uso empresarial e de consumo.
           </motion.p>
           {/* counters */}
