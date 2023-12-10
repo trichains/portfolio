@@ -30,6 +30,8 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trichains.vercel.app" />
+        {/* Adicione a tag title com o título desejado */}
+        <title>trichains - Portfólio</title>
       </Head>
       <Layout>
         <AnimatePresence mode="wait">
