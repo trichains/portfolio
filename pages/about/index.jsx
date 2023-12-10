@@ -255,7 +255,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit={'hidden'}
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px] relative">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -271,7 +271,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 mb-60 xl:mb-10 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start overflow-y-scroll xl:overflow-y-hidden">
+          <div className="py-2 xl:py-6 mb-60 xl:mb-10 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start overflow-y-auto xl:overflow-y-auto">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
@@ -294,6 +294,17 @@ const About = () => {
                 </div>
               );
             })}
+            {/* Seta animada para indicar rolar para baixo */}
+            <motion.div
+              variants={fadeIn('up', 0.4)}
+              initial="hidden"
+              exit={'hidden'}
+              animate="show"
+              className="absolute right-4 bottom-1/2 transform translate-y-1/2 animate-bounce md:hidden">
+              <div className="text-2xl xl:first-letter: text-accent xl:text-3xl font-extrabold">
+                🠗
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
