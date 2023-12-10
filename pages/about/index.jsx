@@ -302,7 +302,7 @@ const About = () => {
               animate="show"
               className="absolute right-4 bottom-1/2 transform translate-y-1/2 animate-bounce md:hidden">
               <div className="text-2xl xl:first-letter: text-accent xl:text-3xl font-extrabold">
-                🠗
+                &darr;
               </div>
             </motion.div>
           </div>
