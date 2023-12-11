@@ -33,9 +33,11 @@ const Home = () => {
                   3000,
                   'Web Developer',
                   2000,
-                  'Mobile Developer',
+                  'Freelancer',
                   2000,
                   'UI/UX Designer',
+                  2000,
+                  'Gamer',
                   2000
                 ]}
                 wrapper="span"
