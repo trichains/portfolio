@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+
 // components
 import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
@@ -92,6 +94,7 @@ const Home = () => {
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-40 lg:bottom-14 lg:right-[8%]">
           <Avatar />
         </motion.div>
+        <Analytics />
       </div>
     </div>
   );
