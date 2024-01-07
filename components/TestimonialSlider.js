@@ -16,8 +16,7 @@ const testimonialSlider = [
     image: '/t-avt-3.png',
     name: 'Henrique Gomes',
     position: 'Empreendedor Digital',
-    message:
-      'Divisor de águas! Impulsionou nossa presença online.'
+    message: 'Divisor de águas! Impulsionou nossa presença online.'
   }
 ];
 
@@ -48,7 +47,7 @@ const TestimonialSlider = () => {
       {testimonialSlider.map((person, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 bg-black/30">
               {/* avatar, name, position */}
               <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">

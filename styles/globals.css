@@ -8,14 +8,14 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #1d130f;
+  background-color: #eee0b1;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #1d130f;
+  color: #eee0b1;
 }
 
 @layer base {
