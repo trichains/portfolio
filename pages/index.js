@@ -14,9 +14,9 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-black/60 h-full">
       {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-bg">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
           <motion.h1
@@ -24,7 +24,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1">
+            className="h1 text-color">
             Olá, eu sou <br />
             <span className="text-accent">
               <TypeAnimation

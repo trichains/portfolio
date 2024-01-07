@@ -22,7 +22,7 @@ const Socials = () => {
     );
   };
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex items-center gap-x-5 text-2xl">
       <ExternalLink href={'https://www.linkedin.com/in/trichains/'}>
         <RiLinkedinLine />
       </ExternalLink>

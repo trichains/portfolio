@@ -24,7 +24,9 @@ module.exports = {
       colors: {
         primary: '#131424',
         secondary: '#393A47',
-        accent: '#65a'
+        accent: '#EEE0B1',
+        bg: '#17100D',
+        color: '#fff'
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.webp")',
