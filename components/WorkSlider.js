@@ -4,11 +4,20 @@ const workSlider = {
     {
       projects: [
         {
+          title: 'Snapcatt',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Rede social completa para gatos.
+            </span>
+          ),
+          link: 'https://snapcatt.vercel.app',
+          image: '/thumb5.jpg'
+        },
+        {
           title: 'ChatChains',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Chatbot integrado com a API do GPT. Projeto organizado com
-              interface limpa e moderna.
+              Chatbot integrado com a API do GPT.
             </span>
           ),
           link: 'https://chatchains.vercel.app/',
@@ -33,7 +42,11 @@ const workSlider = {
           ),
           link: 'https://trichains.github.io/aves-fantasticas/',
           image: '/thumb3.jpg'
-        },
+        }
+      ]
+    },
+    {
+      projects: [
         {
           title: 'WildBeast',
           description: (
@@ -43,37 +56,27 @@ const workSlider = {
           ),
           link: 'https://trichains.github.io/projeto-wildbeast/',
           image: '/thumb4.jpg'
+        },
+        {
+          title: 'Flip Card',
+          description: 'Um efeito de carta giratória interativo usando CSS e JavaScript.',
+          link: 'https://trichains.github.io/flip-card/',
+          image: '/thumb1.jpg'
+        },
+        {
+          title: 'Projeto Cordel',
+          description: 'Um projeto criativo inspirado no tradicional cordel brasileiro.',
+          link: 'https://trichains.github.io/projeto-cordel/',
+          image: '/thumb2.jpg'
+        },
+        {
+          title: 'Projeto Login Básico',
+          description: 'Um formulário de login simples e elegante.',
+          link: 'https://trichains.github.io/projeto-login-basico/',
+          image: '/thumb3.jpg'
         }
       ]
     }
-    // {
-    //   projects: [
-    //     {
-    //       title: 'FlexBlog',
-    //       description: 'Um blog flexível com design moderno e responsivo.',
-    //       link: 'https://trichains.github.io/projeto-flexblog/',
-    //       image: '/thumb4.jpg'
-    //     },
-    //     {
-    //       title: 'Flip Card',
-    //       description: 'Um efeito de carta giratória interativo usando CSS e JavaScript.',
-    //       link: 'https://trichains.github.io/flip-card/',
-    //       image: '/thumb1.jpg'
-    //     },
-    //     {
-    //       title: 'Projeto Cordel',
-    //       description: 'Um projeto criativo inspirado no tradicional cordel brasileiro.',
-    //       link: 'https://trichains.github.io/projeto-cordel/',
-    //       image: '/thumb2.jpg'
-    //     },
-    //     {
-    //       title: 'Projeto Login Básico',
-    //       description: 'Um formulário de login simples e elegante.',
-    //       link: 'https://trichains.github.io/projeto-login-basico/',
-    //       image: '/thumb3.jpg'
-    //     }
-    //   ]
-    // }
   ]
 };
 
@@ -115,12 +118,7 @@ const WorkSlider = () => {
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group">
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       {/* image */}
-                      <Image
-                        src={project.image}
-                        width={500}
-                        height={300}
-                        alt={project.title}
-                      />
+                      <Image src={project.image} width={500} height={300} alt={project.title} />
                       {/* overlay gradient */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#222222] to-[#0a0a0a] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       {/* title */}
@@ -129,9 +127,7 @@ const WorkSlider = () => {
                           {/* title */}
                           <div className="mb-1">{project.title}</div>
                           {/* description */}
-                          <div className="text-center text-gray-300">
-                            {project.description}
-                          </div>
+                          <div className="text-center text-gray-300">{project.description}</div>
                           {/* icon */}
                           <div className="mt-2 text-xl text-white">
                             <BsArrowRight />
