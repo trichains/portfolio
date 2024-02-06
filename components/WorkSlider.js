@@ -14,6 +14,16 @@ const workSlider = {
           image: '/thumb5.jpg'
         },
         {
+          title: 'Grão Nobre',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Um site dedicado à arte do café.
+            </span>
+          ),
+          link: 'https://graonobre.vercel.app',
+          image: '/thumb6.jpg'
+        },
+        {
           title: 'ChatChains',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
@@ -32,7 +42,11 @@ const workSlider = {
           ),
           link: 'https://mottocraft.vercel.app/',
           image: '/thumb2.jpg'
-        },
+        }
+      ]
+    },
+    {
+      projects: [
         {
           title: 'Aves Fantásticas',
           description: (
@@ -42,41 +56,37 @@ const workSlider = {
           ),
           link: 'https://trichains.github.io/aves-fantasticas/',
           image: '/thumb3.jpg'
+        },
+        {
+          title: 'WildBeast',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Explore o mundo da natureza com este site informativo.
+            </span>
+          ),
+          link: 'https://trichains.github.io/projeto-wildbeast/',
+          image: '/thumb4.jpg'
+        },
+        {
+          title: 'Em Breve',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Trabalhando nesse projeto 🧑‍🏭
+            </span>
+          ),
+          image: '/em-breve.svg'
+        },
+        {
+          title: 'Em Breve',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Trabalhando nesse projeto 🧑‍🏭
+            </span>
+          ),
+          image: '/em-breve.svg'
         }
       ]
     }
-    // {
-    //   projects: [
-    //     {
-    //       title: 'WildBeast',
-    //       description: (
-    //         <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-    //           Explore o mundo da natureza com este site informativo.
-    //         </span>
-    //       ),
-    //       link: 'https://trichains.github.io/projeto-wildbeast/',
-    //       image: '/thumb4.jpg'
-    //     },
-    //     {
-    //       title: 'Flip Card',
-    //       description: 'Um efeito de carta giratória interativo usando CSS e JavaScript.',
-    //       link: 'https://trichains.github.io/flip-card/',
-    //       image: '/thumb1.jpg'
-    //     },
-    //     {
-    //       title: 'Projeto Cordel',
-    //       description: 'Um projeto criativo inspirado no tradicional cordel brasileiro.',
-    //       link: 'https://trichains.github.io/projeto-cordel/',
-    //       image: '/thumb2.jpg'
-    //     },
-    //     {
-    //       title: 'Projeto Login Básico',
-    //       description: 'Um formulário de login simples e elegante.',
-    //       link: 'https://trichains.github.io/projeto-login-basico/',
-    //       image: '/thumb3.jpg'
-    //     }
-    //   ]
-    // }
   ]
 };
 
