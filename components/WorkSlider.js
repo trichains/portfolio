@@ -4,14 +4,14 @@ const workSlider = {
     {
       projects: [
         {
-          title: 'Snapcatt',
+          title: 'Vitriny',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Rede social completa para gatos.
+              Um site com um catálogo de carros para alugar.
             </span>
           ),
-          link: 'https://snapcatt.vercel.app',
-          image: '/thumb5.jpg'
+          link: 'https://vitriny.vercel.app/',
+          image: '/thumb7.jpg'
         },
         {
           title: 'Grão Nobre',
@@ -24,6 +24,16 @@ const workSlider = {
           image: '/thumb6.jpg'
         },
         {
+          title: 'Snapcatt',
+          description: (
+            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
+              Rede social completa para gatos.
+            </span>
+          ),
+          link: 'https://snapcatt.vercel.app',
+          image: '/thumb5.jpg'
+        },
+        {
           title: 'ChatChains',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
@@ -32,7 +42,11 @@ const workSlider = {
           ),
           link: 'https://chatchains.vercel.app/',
           image: '/thumb1.jpg'
-        },
+        }
+      ]
+    },
+    {
+      projects: [
         {
           title: 'mottocraft',
           description: (
@@ -42,11 +56,7 @@ const workSlider = {
           ),
           link: 'https://mottocraft.vercel.app/',
           image: '/thumb2.jpg'
-        }
-      ]
-    },
-    {
-      projects: [
+        },
         {
           title: 'Aves Fantásticas',
           description: (
@@ -56,16 +66,6 @@ const workSlider = {
           ),
           link: 'https://trichains.github.io/aves-fantasticas/',
           image: '/thumb3.jpg'
-        },
-        {
-          title: 'WildBeast',
-          description: (
-            <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Explore o mundo da natureza com este site informativo.
-            </span>
-          ),
-          link: 'https://trichains.github.io/projeto-wildbeast/',
-          image: '/thumb4.jpg'
         },
         {
           title: 'Em Breve',
