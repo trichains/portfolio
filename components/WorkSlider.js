@@ -7,7 +7,7 @@ const workSlider = {
           title: 'Vitriny',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Um site com um catálogo de carros para alugar.
+              Vitrine de carros para alugar
             </span>
           ),
           link: 'https://vitriny.vercel.app/',
@@ -27,7 +27,7 @@ const workSlider = {
           title: 'Snapcatt',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Rede social completa para gatos.
+              Rede social para gatos.
             </span>
           ),
           link: 'https://snapcatt.vercel.app',
@@ -37,7 +37,7 @@ const workSlider = {
           title: 'ChatChains',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Chatbot integrado com a API do GPT.
+              Chatbot com a API do GPT.
             </span>
           ),
           link: 'https://chatchains.vercel.app/',
@@ -51,7 +51,7 @@ const workSlider = {
           title: 'mottocraft',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Um site para venda e compra de motos premium.
+              Venda de motos premium.
             </span>
           ),
           link: 'https://mottocraft.vercel.app/',
@@ -61,7 +61,7 @@ const workSlider = {
           title: 'Aves Fantásticas',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
-              Um guia visual encantador das aves mais fascinantes do mundo.
+              Aves mais belas do mundo.
             </span>
           ),
           link: 'https://trichains.github.io/aves-fantasticas/',
@@ -132,7 +132,7 @@ const WorkSlider = () => {
                       {/* overlay gradient */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#222222] to-[#0a0a0a] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       {/* title */}
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-0 group-hover:xl:-translate-y-20 transition-all duration-300">
                         <div className="flex flex-col items-center text-[13px] tracking-[0.2em]">
                           {/* title */}
                           <div className="mb-1">{project.title}</div>
