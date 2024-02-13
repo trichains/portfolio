@@ -68,22 +68,22 @@ const workSlider = {
           image: '/thumb3.jpg'
         },
         {
-          title: 'Em Breve',
+          title: 'Em Construção',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
               Trabalhando nesse projeto 🧑‍🏭
             </span>
           ),
-          image: '/em-breve.svg'
+          image: '/embreve.jpg'
         },
         {
-          title: 'Em Breve',
+          title: 'Em Construção',
           description: (
             <span className="bg-black bg-opacity-75 rounded py-1 w-max text-center inline text-white px-2">
               Trabalhando nesse projeto 🧑‍🏭
             </span>
           ),
-          image: '/em-breve.svg'
+          image: '/embreve.jpg'
         }
       ]
     }
