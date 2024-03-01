@@ -22,7 +22,13 @@ const Header = () => {
               priority={true}
             />
           </Link>
-          {/* socials */}
+          {/* socials and blog invite */}
+          <Link
+            href={'https://3chains.vercel.app'}
+            target="_blank"
+            className="hidden animate-pulse lg:block text-base tracking-widest hover:text-accent transition all duration-300">
+            visite meu blog &rarr;
+          </Link>
           <Socials />
         </div>
       </div>
