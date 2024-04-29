@@ -42,7 +42,7 @@ const Transition = () => {
           ease: 'easeInOut'
         }}></motion.div>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#8A8164]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#aaa]"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
