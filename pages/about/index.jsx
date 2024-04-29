@@ -1,9 +1,22 @@
 import React, { useState } from 'react';
 
 // icons
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma, FaLanguage } from 'react-icons/fa';
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaWordpress,
+  FaFigma,
+  FaLanguage
+} from 'react-icons/fa';
 
-import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
+import {
+  SiNextdotjs,
+  SiFramer,
+  SiAdobexd,
+  SiAdobephotoshop
+} from 'react-icons/si';
 
 //  about data
 export const aboutData = [
@@ -24,7 +37,11 @@ export const aboutData = [
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma key="figma" />, <SiAdobexd key="adobexd" />, <SiAdobephotoshop key="adobephotoshop" />]
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="adobephotoshop" />
+        ]
       },
       {
         title: 'Inglês Intermediário',
@@ -38,7 +55,10 @@ export const aboutData = [
       {
         title: 'ReactJS Completo [36 Horas]',
         stage: (
-          <a href="https://www.origamid.com/certificate/a2bdf3ba" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.origamid.com/certificate/a2bdf3ba"
+            target="_blank"
+            rel="noreferrer">
             <span className="text-accent">Ver Certificado</span>
           </a>
         )
@@ -46,7 +66,10 @@ export const aboutData = [
       {
         title: 'JavaScript Completo ES6 [74 Horas]',
         stage: (
-          <a href="https://www.origamid.com/certificate/9acf7493" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.origamid.com/certificate/9acf7493"
+            target="_blank"
+            rel="noreferrer">
             <span className="text-accent">Ver Certificado</span>
           </a>
         )
@@ -54,7 +77,10 @@ export const aboutData = [
       {
         title: 'HTML/CSS [46 Horas]',
         stage: (
-          <a href="https://www.origamid.com/certificate/df7f556d" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.origamid.com/certificate/df7f556d"
+            target="_blank"
+            rel="noreferrer">
             <span className="text-accent">Ver Certificado</span>
           </a>
         )
@@ -62,7 +88,10 @@ export const aboutData = [
       {
         title: 'UI Design Avançado [30 Horas]',
         stage: (
-          <a href="https://www.origamid.com/certificate/4c6b8a99" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.origamid.com/certificate/4c6b8a99"
+            target="_blank"
+            rel="noreferrer">
             <span className="text-accent">Ver Certificado</span>
           </a>
         )
@@ -70,7 +99,10 @@ export const aboutData = [
       {
         title: 'UI Design [34 Horas]',
         stage: (
-          <a href="https://www.origamid.com/certificate/b15b0ebe" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.origamid.com/certificate/b15b0ebe"
+            target="_blank"
+            rel="noreferrer">
             <span className="text-accent">Ver Certificado</span>
           </a>
         )
@@ -78,7 +110,10 @@ export const aboutData = [
       {
         title: 'CSS Flexbox [6 Horas]',
         stage: (
-          <a href="https://www.origamid.com/certificate/8fa90288" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.origamid.com/certificate/8fa90288"
+            target="_blank"
+            rel="noreferrer">
             <span className="text-accent">Ver Certificado</span>
           </a>
         )
@@ -86,7 +121,10 @@ export const aboutData = [
       {
         title: 'CSS Grid Layout [10 Horas]',
         stage: (
-          <a href="https://www.origamid.com/certificate/4a38808e" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.origamid.com/certificate/4a38808e"
+            target="_blank"
+            rel="noreferrer">
             <span className="text-accent">Ver Certificado</span>
           </a>
         )
@@ -150,23 +188,30 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit={'hidden'}
-        className="hidden xl:flex absolute bottom-0 -left-[370px]">
+        className="hidden xl:flex absolute bottom-0 -left-[450px] brightness-50">
         <Avatar />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center ">
-          <motion.h2 variants={fadeIn('right', 0.2)} initial="hidden" animate="show" exit={'hidden'} className="h2">
-            Projetos <span className="text-accent">vencedores</span> nascem da dedicação a tecnologia.
+        <div className="flex-1 flex flex-col justify-center z-50">
+          <motion.h2
+            variants={fadeIn('right', 0.2)}
+            initial="hidden"
+            animate="show"
+            exit={'hidden'}
+            className="h2 text-neutral-400">
+            Projetos <span className="text-accent">vencedores</span> nascem da
+            dedicação a tecnologia.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
             initial="hidden"
             animate="show"
             exit={'hidden'}
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            Há 1 ano atrás, comecei a trabalhar de freelancer como desenvolvedor. Desde então, fiz trabalhos remotos
-            para agências e colaborei em produtos digitais para uso empresarial e de consumo.
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-accent">
+            Há 1 ano atrás, comecei a trabalhar de freelancer como
+            desenvolvedor. Desde então, fiz trabalhos remotos para agências e
+            colaborei em produtos digitais para uso empresarial e de consumo.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -181,14 +226,16 @@ const About = () => {
                 <div className="text-2xl xl:text-4x1 font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={7} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Anos de experiencia</div>
+                <div className="text-color text-xs uppercase tracking-[1px]leading-[1.4] max-w-[100px]">
+                  Anos de experiencia
+                </div>
               </div>
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4x1 font-extrabold text-accent mb-2">
                   <CountUp start={0} end={12} duration={5} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                <div className="text-color text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Clientes satisfeitos.
                 </div>
               </div>
@@ -197,7 +244,7 @@ const About = () => {
                 <div className="text-2xl xl:text-4x1 font-extrabold text-accent mb-2">
                   <CountUp start={0} end={23} duration={5} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                <div className="text-color text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Projetos finalizados.
                 </div>
               </div>
@@ -206,7 +253,7 @@ const About = () => {
                 <div className="text-2xl xl:text-4x1 font-extrabold text-accent mb-2">
                   <CountUp start={0} end={7} duration={5} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                <div className="text-color text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Certificados garantidos.
                 </div>
               </div>
@@ -265,7 +312,9 @@ const About = () => {
               exit={'hidden'}
               animate="show"
               className="absolute right-4 bottom-1/2 transform translate-y-1/2 animate-bounce md:hidden">
-              <div className="text-2xl xl:first-letter: text-accent xl:text-3xl font-extrabold">&darr;</div>
+              <div className="text-2xl xl:first-letter: text-accent xl:text-3xl font-extrabold">
+                &darr;
+              </div>
             </motion.div>
           </div>
         </motion.div>
